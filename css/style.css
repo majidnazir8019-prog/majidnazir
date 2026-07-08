@@ -122,8 +122,11 @@ Hero
     text-align:center;
 
     /*background:linear-gradient(135deg,#0B3D91,#1f6fd1);*/
-     background: url("../assets/images/hero-bg.png") center center / cover no-repeat;
-    color:white;
+   
+    background: url("assets/images/hero-bg.png") center center / cover no-repeat;
+ 
+   /*background: <img src="assets/images/hero-bg.png"> center center / cover no-repeat;
+    color:white;*/
 
     padding:120px 20px;
 
