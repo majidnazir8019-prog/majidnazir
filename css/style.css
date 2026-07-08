@@ -109,27 +109,20 @@ nav a:hover{
 Hero
 ============================= */
 
+
 .hero{
-
     min-height:100vh;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
-    text-align:center;
+    background:
+        linear-gradient(rgba(11,61,145,0.75), rgba(11,61,145,0.75)),
+        url("assets/images/hero-bg.png");
 
-    /*background:linear-gradient(135deg,#0B3D91,#1f6fd1);*/
-   
-    background: url("assets/images/hero-bg.png") center center / cover no-repeat;
- 
-   /*background: <img src="assets/images/hero-bg.png"> center center / cover no-repeat;
-    color:white;*/
-
-    padding:120px 20px;
-
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .hero-content{
