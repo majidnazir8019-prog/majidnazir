@@ -1,6 +1,6 @@
 /* =====================================
    MAJID NAZIR PORTFOLIO
-   Main Stylesheet
+   Updated Main Stylesheet
 ===================================== */
 
 *{
@@ -14,99 +14,65 @@ html{
 }
 
 body{
-
-    font-family:Arial,Helvetica,sans-serif;
-
+    font-family:Arial, Helvetica, sans-serif;
     background:#f4f7fb;
-
     color:#222;
-
     line-height:1.7;
-
 }
+
 
 /* =============================
 Navigation
 ============================= */
 
 header{
-
     position:fixed;
-
     top:0;
-
     width:100%;
-
     background:#0B3D91;
-
     color:#fff;
-
     z-index:999;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
-
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
 }
 
 nav{
-
     max-width:1200px;
-
     margin:auto;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     padding:18px 20px;
-
 }
 
 .logo{
-
     color:#fff;
-
     font-size:28px;
-
     font-weight:bold;
-
 }
 
 nav ul{
-
     display:flex;
-
     list-style:none;
-
 }
 
 nav li{
-
     margin-left:25px;
-
 }
 
 nav a{
-
     color:white;
-
     text-decoration:none;
-
     font-weight:bold;
-
     transition:.3s;
-
 }
 
 nav a:hover{
-
     color:#FFD447;
-
 }
 
+
 /* =============================
-Hero
+Hero Section
 ============================= */
 
 .hero{
@@ -121,25 +87,45 @@ Hero
 
     text-align:center;
 
-    background:linear-gradient(135deg,#0B3D91,#1f6fd1);
-
     color:white;
 
     padding:120px 20px;
 
+
+    background:
+
+    linear-gradient(
+    rgba(11,61,145,.85),
+    rgba(31,111,209,.85)
+    ),
+
+    url("assets/images/hero-bg.png");
+
+
+    background-position:center;
+
+    background-size:cover;
+
+    background-repeat:no-repeat;
+
 }
+
 
 .hero-content{
 
-    max-width:800px;
+    max-width:850px;
 
 }
+
 
 .hero h1{
 
     font-size:60px;
 
+    font-weight:800;
+
 }
+
 
 #typing-text{
 
@@ -153,6 +139,7 @@ Hero
 
 }
 
+
 #typing-text::after{
 
     content:"|";
@@ -160,6 +147,7 @@ Hero
     animation:blink .8s infinite;
 
 }
+
 
 @keyframes blink{
 
@@ -171,6 +159,7 @@ opacity:0;
 
 }
 
+
 .hero p{
 
     font-size:20px;
@@ -178,6 +167,7 @@ opacity:0;
     margin-bottom:35px;
 
 }
+
 
 /* =============================
 Buttons
@@ -187,7 +177,7 @@ Buttons
 
 display:inline-block;
 
-padding:14px 35px;
+padding:14px 40px;
 
 background:#FFD447;
 
@@ -203,13 +193,15 @@ transition:.35s;
 
 }
 
+
 .btn:hover{
 
 transform:translateY(-5px);
 
-box-shadow:0 10px 25px rgba(0,0,0,.25);
+box-shadow:0 12px 30px rgba(0,0,0,.3);
 
 }
+
 
 /* =============================
 Cards
@@ -231,6 +223,7 @@ padding:20px;
 
 }
 
+
 .card{
 
 background:#fff;
@@ -245,11 +238,13 @@ transition:.35s;
 
 }
 
+
 .card:hover{
 
 transform:translateY(-10px);
 
 }
+
 
 .card h2{
 
@@ -259,9 +254,11 @@ margin-bottom:15px;
 
 }
 
+
 /* =============================
 Statistics
 ============================= */
+
 
 .stats{
 
@@ -279,6 +276,7 @@ padding:20px;
 
 }
 
+
 .stat-box{
 
 background:white;
@@ -295,11 +293,13 @@ transition:.3s;
 
 }
 
+
 .stat-box:hover{
 
 transform:translateY(-10px);
 
 }
+
 
 .counter{
 
@@ -309,13 +309,13 @@ font-weight:bold;
 
 color:#0B3D91;
 
-margin-bottom:10px;
-
 }
+
 
 /* =============================
 Gallery
 ============================= */
+
 
 .gallery-grid{
 
@@ -333,6 +333,7 @@ padding:20px;
 
 }
 
+
 .gallery-item{
 
 background:white;
@@ -347,23 +348,31 @@ transition:.35s;
 
 }
 
+
 .gallery-item:hover{
 
 transform:translateY(-8px);
 
 }
 
+
 .gallery-item img{
 
 width:100%;
+
+height:250px;
+
+object-fit:cover;
 
 border-radius:10px;
 
 }
 
+
 /* =============================
 Forms
 ============================= */
+
 
 form{
 
@@ -381,8 +390,8 @@ box-shadow:0 15px 35px rgba(0,0,0,.08);
 
 }
 
-input,
 
+input,
 textarea{
 
 width:100%;
@@ -400,6 +409,7 @@ border-radius:8px;
 font-size:16px;
 
 }
+
 
 button{
 
@@ -421,15 +431,18 @@ transition:.3s;
 
 }
 
+
 button:hover{
 
 background:#062A67;
 
 }
 
+
 /* =============================
 Footer
 ============================= */
+
 
 footer{
 
@@ -445,9 +458,11 @@ padding:30px;
 
 }
 
+
 /* =============================
 Top Button
 ============================= */
+
 
 #topBtn{
 
@@ -459,18 +474,78 @@ border-radius:50%;
 
 }
 
+
 /* =============================
 Utility
 ============================= */
 
+
 section{
 
-padding:40px 0;
+padding:60px 0;
 
 }
+
 
 .active{
 
 color:#FFD447 !important;
+
+}
+
+
+/* =============================
+Mobile Responsive
+============================= */
+
+
+@media(max-width:768px){
+
+
+nav{
+
+flex-direction:column;
+
+}
+
+
+nav ul{
+
+margin-top:15px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+
+nav li{
+
+margin:8px 12px;
+
+}
+
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+
+#typing-text{
+
+font-size:25px;
+
+}
+
+
+.hero p{
+
+font-size:17px;
+
+}
+
 
 }
